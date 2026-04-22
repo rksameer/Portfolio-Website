@@ -597,7 +597,7 @@
     border: 1px solid var(--border);
     padding: 2rem 2.2rem;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 2px 20px rgba(0,0,0,0.05);
     transition: border-color 0.35s, transform 0.35s;
   }
@@ -614,6 +614,7 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.45s ease;
+    z-index: 1;
   }
   .skills-card:hover::after { transform: scaleX(1); }
 
@@ -760,6 +761,7 @@
     font-size: 0.8rem;
     color: var(--muted);
     line-height: 1.75;
+    word-break: break-all;
   }
   .cert-text strong {
     color: var(--text);
@@ -1019,7 +1021,7 @@
   <div class="glow-orb orb2"></div>
 
   <div class="hero-left">
-    <div class="hero-eyebrow">PhD Candidate · Chemical Engineering</div>
+    <div class="hero-eyebrow">PhD Researcher · Chemical Engineering</div>
     <h1 class="hero-name">Sameer<br /><em>Kalghatgi</em></h1>
     <div class="hero-title">// Kumar Research Group · Columbia University</div>
     <p class="hero-desc">
@@ -1047,7 +1049,7 @@
       </div>
       <div class="bcard bcard-wide">
         <div class="bcard-label">Research Focus</div>
-        <div class="bcard-value-sm">Semicrystalline Polymers<br />Polymer Crystallization<br />Reprocessing & Upcycling</div>
+        <div class="bcard-value-sm">Semicrystalline Polymer<br />Reprocessing & Nanoplastics</div>
       </div>
       <div class="bcard">
         <div class="bcard-label">Conferences</div>
@@ -1338,7 +1340,7 @@
       <div class="cert-block">
         <div class="cert-badge">CERT</div>
         <div class="cert-text">
-          <strong>GPC Superuser</strong> — Certified and trained operators on the Tosoh ECOSEC GPC at Columbia's Shared Materials Characterization Lab (SMCL). Website: https://cni.columbia.edu/columbia-university-super-users 
+          <strong>GPC Superuser</strong> — Certified and trained operators on the Tosoh ECOSEC GPC at Columbia's Shared Materials Characterization Lab (SMCL).
         </div>
       </div>
     </div>
@@ -1396,13 +1398,13 @@
     <div class="conf-item">
       <div class="conf-year">2026 · APS March Meeting</div>
       <div class="conf-title">Degradation and Nanoplastics Formation due to External Stresses in Semicrystalline Polymers</div>
-      <div class="conf-venue">Denver, Colorado · March 15–19, 2026 · <em style="color:var(--accent3);">Contributed Oral Speaker</em></div>
+      <div class="conf-venue">Denver, Colorado · March 15–19, 2026 · <em style="color:var(--accent3);">Paper Presentation</em></div>
     </div>
 
     <div class="conf-item">
       <div class="conf-year">2024 · APS March Meeting</div>
       <div class="conf-title">Molecular Dynamics Study on the Rheology of Polymer-Nanoparticles Mixture: Role of Inter-particle Interactions</div>
-      <div class="conf-venue">Minneapolis, Minnesota · March 4–8, 2024 · <em style="color:var(--accent3);">Contributed Oral Speaker</em></div>
+      <div class="conf-venue">Minneapolis, Minnesota · March 4–8, 2024 · <em style="color:var(--accent3);">Paper Presentation</em></div>
     </div>
 
     <div class="conf-item">
